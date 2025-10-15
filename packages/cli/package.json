@@ -1,0 +1,22 @@
+{
+  "name": "@kk-cli/cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "index.js",
+  "bin": {
+    "kk": "./bin/kk"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "8.4.0",
+    "@types/node": "20.17.28",
+    "commander": "13.1.0"
+  }
+}

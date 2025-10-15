@@ -1,0 +1,15 @@
+{
+  "name": "@kk-cli/website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "kk-cli-test": "kk"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@kk-cli/cli": "workspace:*"
+  }
+}
