@@ -6,7 +6,11 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "packageManager": "pnpm@8.6.12",
   "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "publish:cli": "pnpm build && pnpm publish",
     "lint:ts": "eslint --fix",
     "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
     "commit": "git-cz",
@@ -18,17 +22,19 @@
     }
   },
   "devDependencies": {
-    "typescript": "5.8.2",
-    "eslint": "9.23.0",
     "@eslint/js": "9.23.0",
-    "globals": "16.0.0",
-    "typescript-eslint": "8.28.0",
     "@typescript-eslint/eslint-plugin": "8.28.0",
-    "eslint-plugin-simple-import-sort": "12.1.1",
-    "cspell": "8.18.1",
     "commitizen": "4.3.1",
+    "commitlint": "19.8.0",
+    "cspell": "8.18.1",
     "cz-git": "1.12.0",
+    "eslint": "9.23.0",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "eslint-plugin-unicorn": "^61.0.2",
+    "globals": "16.0.0",
     "husky": "9.1.7",
-    "commitlint": "19.8.0"
+    "turbo": "2.5.0",
+    "typescript": "5.8.2",
+    "typescript-eslint": "8.28.0"
   }
 }

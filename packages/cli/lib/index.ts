@@ -1,6 +1,7 @@
 import { program } from 'commander';
-import { deploy } from './commands/deploy.ts';
-import { commandPluginInit } from './commands/init.ts';
+
+import "./commands";
+
 // const commands = new Map<string, Function>();
 // function registerCommand(command: string, action: Function) {
 //     commands.set(command, action);
@@ -13,10 +14,5 @@ import { commandPluginInit } from './commands/init.ts';
 export function runCli() {
     // program.option("--first").option('')
 
-    program.command('deploy').description('Deploy something').action(() => {
-        deploy();
-    });
-    //
-    program.addCommand(commandPluginInit)
     program.parse(process.argv)
 }
