@@ -11,7 +11,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "publish:cli": "pnpm build && pnpm publish",
-    "lint:ts": "eslint --fix",
+    "lint:ts": "eslint \"{packages,apps}/**/*.{js.ts,tsx}\"",
     "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
     "commit": "git-cz",
     "prepare": "husky"
